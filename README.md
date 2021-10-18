@@ -6,7 +6,7 @@ My name is Mariia and this is my web development portfolio build using my new Re
 
 ## Screenshot
 
-<img src="./imgforreadme.PNG" width="400" height="350" alt="img for readme"/>
+<img src="./Capturereadme.PNG" width="400" height="430" alt="img for readme"/>
 
 ## What's included
 
