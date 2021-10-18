@@ -11,14 +11,13 @@ My name is Mariia and this is my web development portfolio build using my new Re
 ## What's included
 
 This application uses React to render content. 
-There are 4 components  `Header` appears on multiple pages, `Navigation` within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections, `Project` uses multiple times in the Portfolio section and `Footer` appears on multiple pages.
-
+It introduces 4 pages - About Me, Portfolio, Contact and Resume.
 
 ## Links to Review
 
-* The URL of the functional, deployed application:
+* The URL of the functional, deployed application: https://maryvpie.github.io/react-portfolio
 
-* The URL of the GitHub repository:
+* The URL of the GitHub repository: https://github.com/MaryVPie/react-portfolio
 
 
 I will be updating my portfolio on a regular basis to include my feature projects.
