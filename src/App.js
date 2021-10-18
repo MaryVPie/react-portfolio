@@ -56,9 +56,10 @@ function App() {
               <Route path="/resume">
                 <ResumePage />
               </Route>
-              <Redirect exact from="/" to="/about">
+              <Redirect from="/" to="/about">
                 <AboutMePage/>
               </Redirect>
+              <Route render={() => <Redirect to="/" />} />
             </Switch>
 
             <br/>
