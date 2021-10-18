@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class PageHeading extends Component {
   
   render() {
-    // You can use them as regular CSS styles
     return <> 
         <div className="row">
             <div className="col-12" >

@@ -5,7 +5,7 @@ import PageHeading from '../components/PageHeading';
 class ContactMePage extends Component {
   
   render() {
-    // You can use them as regular CSS styles
+
     return <>
     <PageHeading text="Contact Me" />
     <ContactForm/>

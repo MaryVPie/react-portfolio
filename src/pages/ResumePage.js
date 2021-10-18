@@ -32,10 +32,10 @@ const backendSet = [
 class ResumePage extends Component {
   
   render() {
-    // You can use them as regular CSS styles
+  
     return <> 
     <PageHeading text="Resume" />
-    {/* <RowHeading5 text="Resume"/> */}
+
     <div className="row py-2">
       <div className="col text-center">
           <a href="Mariia Pirogova.pdf" target="_blank"> 

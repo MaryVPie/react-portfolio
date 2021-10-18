@@ -1,5 +1,23 @@
 // Override default variables before the import
 // $body-bg: rgb(255, 0, 0);
 // $blue: rgb(220, 31, 226);
+// Default variable overrides
+// $body-bg: #A9D6E5;
+$primary: rgb(192, 193, 255);
+$secondary: black;
+$info: rgb(52, 60, 88);
+$light: #D7B9D5;
+$headings-color: #014F86;
+$form-label-color: #78828a;
+$progress-bg: $primary;
+$bg-info: rgb(6, 36, 201);
+$card-color: #455E89;
+$card-bg:#F8EDEB;
+$content-bg: rgba(238, 230, 230, 0.116);
+
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
+
+.container {
+    background-color: $content-bg;
+}

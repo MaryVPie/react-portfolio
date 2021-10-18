@@ -5,7 +5,7 @@ import PageHeading from '../components/PageHeading';
 class ProjectsPage extends Component {
   
   render() {
-    // You can use them as regular CSS styles
+ 
     return <> 
     <PageHeading text="Portfolio" />
     <Projects/>

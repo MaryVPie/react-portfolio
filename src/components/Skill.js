@@ -5,7 +5,7 @@ class Skill extends Component {
   render() {
     // You can use them as regular CSS styles
     return <div className="row">
-    <div className="col m-2 ">
+    <div className="col m-2">
         <div className="progress">
             <div className="progress-bar bg-secondary bg-opacity-50" role="progressbar" style={{
               width: this.props.labelPercent
