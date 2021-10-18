@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import Summary from '../components/Summary';
-import SkillSection from '../components/SkillSection';
+import ContactForm from '../components/ContactForm';
+import PageHeading from '../components/PageHeading';
 
 class ContactMePage extends Component {
   
   render() {
     // You can use them as regular CSS styles
-    return <div></div>
+    return <>
+    <PageHeading text="Contact Me" />
+    <ContactForm/>
+    </>
   }
 }
 

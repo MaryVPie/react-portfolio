@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
 import Projects from '../components/Projects';
-import RowHeading5 from '../components/RowHeading';
+import PageHeading from '../components/PageHeading';
 
 class ProjectsPage extends Component {
   
   render() {
     // You can use them as regular CSS styles
     return <> 
-    
-    <RowHeading5 text="My Successes" domId="Projects"/>
+    <PageHeading text="Portfolio" />
     <Projects/>
     </> 
   }

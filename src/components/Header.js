@@ -3,7 +3,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  NavLink
 } from "react-router-dom";
 
 class Header extends Component {
@@ -19,10 +20,10 @@ class Header extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav">
-              <Link className="nav-link" to="/about">About Me</Link>
-              <Link className="nav-link" to="/projects">Projects</Link>
-              <Link className="nav-link" to="/contacts">Contacts</Link>
-              <Link className="nav-link" to="/resume">Resume</Link>
+              <NavLink className="nav-link" to="/about">About Me</NavLink>
+              <NavLink className="nav-link" to="/projects">Portfolio</NavLink>
+              <NavLink className="nav-link" to="/contacts">Contact</NavLink>
+              <NavLink className="nav-link" to="/resume">Resume</NavLink>
             </div>
           </div>
         </div>

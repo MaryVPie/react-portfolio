@@ -12,7 +12,8 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  Redirect
 } from "react-router-dom";
 
 function App() {
@@ -55,16 +56,18 @@ function App() {
               <Route path="/resume">
                 <ResumePage />
               </Route>
-              <Route path="/">
+              <Redirect exact from="/" to="/about">
                 <AboutMePage/>
-              </Route>
+              </Redirect>
             </Switch>
 
             <br/>
             <RowHeading5 text="Contacts" domId="Contacts"/>
             <Footer/>
             </div>
+            
         </div>
+        
     </Router>
  
   );
