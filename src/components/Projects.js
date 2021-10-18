@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 const allProject = [
     {
         id:1,
-        img: "./assets/weath.PNG",
+        img: "assets/weath.PNG",
         alt: "Weather Dashboard app",
         name: "Weather Dashboard",
         deployed: "https://maryvpie.github.io/wheather-dashboard/",
@@ -13,7 +13,7 @@ const allProject = [
     },
     {
         id:2,
-        img: "./assets/notetr.PNG",
+        img: "assets/notetr.PNG",
         alt: "Note Taker app",
         name: "Note Taker",
         deployed: "https://note-taker-mvpie.herokuapp.com/",
@@ -22,7 +22,7 @@ const allProject = [
     },
     {
         id:3,
-        img: "./assets/Planner.PNG",
+        img: "assets/Planner.PNG",
         alt: "Planner app",
         name: "Plan your workday",
         deployed: "https://maryvpie.github.io/planner/",
@@ -31,7 +31,7 @@ const allProject = [
     },
     {
         id:4,
-        img: "./assets/pasgen.PNG",
+        img: "assets/pasgen.PNG",
         alt: "password generator app",
         name: "Password Generator",
         deployed: "https://maryvpie.github.io/password-generator/Develop/",
@@ -40,7 +40,7 @@ const allProject = [
     },
     {
         id:5,
-        img: "./assets/blog.PNG",
+        img: "assets/blog.PNG",
         alt: "Tech Blog app",
         name: "Tech Blog",
         deployed: "https://technical-blog-mvpie.herokuapp.com/",
@@ -49,7 +49,7 @@ const allProject = [
     },
     {
         id:6,
-        img: "./assets/quiz.PNG",
+        img: "assets/quiz.PNG",
         alt: "Quiz Game app",
         name: "Quiz Game",
         deployed: "https://maryvpie.github.io/Quiz-game/",
@@ -58,7 +58,7 @@ const allProject = [
     },
     {
         id:7,
-        img: "./assets/USREP.PNG",
+        img: "assets/USREP.PNG",
         alt: "US Representatives app",
         name: "US Voter Representatives",
         deployed: "https://maryvpie.github.io/us-voter-representatives/",
@@ -67,7 +67,7 @@ const allProject = [
     },
     {
         id:8,
-        img: "./assets/tutor.PNG",
+        img: "assets/tutor.PNG",
         alt: "Tutorade app",
         name: "Tutorade",
         deployed: "https://new-tutor.herokuapp.com/login",
@@ -84,7 +84,7 @@ class Projects extends Component {
        {allProject.map( ( projectInfo ) => (
 					<ProjectCard
                     key={projectInfo.id}
-                    img={projectInfo.img}
+                    img={`${process.env.PUBLIC_URL}/${projectInfo.img}`}
                     alt={projectInfo.alt}
                     name={projectInfo.name}
                     deployed={projectInfo.deployed}

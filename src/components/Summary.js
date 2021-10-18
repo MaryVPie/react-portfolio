@@ -6,7 +6,7 @@ class Summary extends Component {
     // You can use them as regular CSS styles
     return <div className="col-12 col-md-4 g-0 ">
     <div className="card pt-3 border-0">
-        <img className="card-img-top rounded-circle m-auto" src="./assets/200.jpg" alt="Mariia Pirogova"
+        <img className="card-img-top rounded-circle m-auto" src={`${process.env.PUBLIC_URL}/assets/200.jpg`} alt="Mariia Pirogova"
             style= {{
                 height: "180px",
                 width: "180px"
