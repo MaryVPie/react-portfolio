@@ -3,43 +3,70 @@ import './App.css';
 import RowHeading5 from './components/RowHeading';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Summary from './components/Summary';
-import Skills from './components/Skills';
 import Projects from './components/Projects';
+import AboutMePage from './pages/AboutMePage';
+import ContactMePage from './pages/ContactMePage';
+import ProjectsPage from './pages/ProjectsPage';
+import ResumePage from './pages/ResumePage';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-     
-      {/* <header className="App-header">
-        
-        <img src={logo} className="App-logo" alt="logo" />
-        <p className="bg-primary">
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <body class="container">
-      <Header />
-      <div class="row "> 
-        <Summary/>
-        <Skills/>
-      </div>
-      <RowHeading5/>
-      <RowHeading5 text="My Successes" domId="Projects"/>
-      <Projects/>
-      <RowHeading5 text="Contacts" domId="Contacts"/>
-      <Footer/>
+    
+    <Router>
+      <div className="App">
+          
+          {/* <header className="App-header">
+            
+            <img src={logo} className="App-logo" alt="logo" />
+            <p className="bg-primary">
+              Edit <code>src/App.js</code> and save to reload.
+            </p>
+            <a
+              className="App-link"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Learn React
+            </a>
+          </header> */}
+            <div className="container">
+            <Header />
+            <br/>
+            <Switch>
+              <Route path="/about">
+                <AboutMePage/>
+              </Route>
+              <Route path="/contacts">
+                <ContactMePage />
+              </Route>
+              <Route path="/contactme">
+                <ContactMePage />
+              </Route>
+              <Route path="/projects">
+                <ProjectsPage />
+              </Route>
+              <Route path="/resume">
+                <ResumePage />
+              </Route>
+              <Route path="/">
+                <AboutMePage/>
+              </Route>
+            </Switch>
 
-      </body>
-    </div>
+            <br/>
+            <RowHeading5 text="Contacts" domId="Contacts"/>
+            <Footer/>
+            </div>
+        </div>
+    </Router>
+ 
   );
 }
 

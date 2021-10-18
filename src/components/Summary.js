@@ -21,7 +21,7 @@ class Summary extends Component {
                 I'm passionate about the Iot Devices which can help prevent the hunt on the endangered species.
                 I thrive to apply my recently learned skills to that area. 
             </p>
-            <div className="row pt-1">
+            {/* <div className="row pt-1">
                 <div className="col text-center"> 
                     <a href="https://github.com/MaryVPie" target="_blank">
                         <i className="fab fa-github fa-lg"></i>
@@ -46,7 +46,7 @@ class Summary extends Component {
                     <a href="Mariia Pirogova.pdf" target="_blank"> <i className="far fa-file-alt fa-lg"></i> <br/>
                         Resume</a>
                 </div>
-            </div>
+            </div> */}
         </div>
     </div>
 </div>

@@ -80,7 +80,7 @@ class Projects extends Component {
   
   render() {
     
-    return <div class="row  row-cols-1 row-cols-sm-2 row-cols-lg-3" >
+    return <div className="row  row-cols-1 row-cols-sm-2 row-cols-lg-3" >
        {allProject.map( ( projectInfo ) => (
 					<ProjectCard
                     key={projectInfo.id}

@@ -4,8 +4,8 @@ class ProjectCard extends Component {
   
   render() {
     // You can use them as regular CSS styles
-    return <div class="col pt-1 g-0">
-    <div class="card pt-3 h-100 border-0">
+    return <div className="col pt-1 g-0">
+    <div className="card pt-3 h-100 border-0">
         <img className="card-img-top  m-auto" src={this.props.img} alt={this.props.alt}
             style={{
                 height: "180px",
